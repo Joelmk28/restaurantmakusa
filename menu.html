@@ -11,23 +11,33 @@
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">
+    <header class="header">
+        <nav class="nav-container">
+            <div class="nav-logo">
                 <a href="index.html">
                     <img src="logo.png" alt="Logo Makusa" class="logo-img">
                 </a>
             </div>
-            <div class="nav-links">
-                <a href="index.html#accueil">Accueil</a>
-                <a href="#menu" class="active">Menu</a>
-                <a href="index.html#about">À propos</a>
-                <a href="index.html#contact">Contact</a>
-            </div>
-            <div class="burger">
-                <span></span>
-                <span></span>
-                <span></span>
+            
+            <button class="nav-toggle" aria-label="Menu">
+                <span class="hamburger"></span>
+            </button>
+
+            <div class="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#menu" class="nav-link active">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#about" class="nav-link">À propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
             </div>
         </nav>
     </header>

@@ -2,11 +2,15 @@
 document.addEventListener('DOMContentLoaded', () => {
     const burger = document.querySelector('.burger');
     const navLinks = document.querySelector('.nav-links');
+    const body = document.body;
 
     if (burger && navLinks) {
-        burger.addEventListener('click', () => {
+        // Gérer le clic sur le burger
+        burger.addEventListener('click', (e) => {
+            e.stopPropagation(); // Empêcher la propagation du clic
             navLinks.classList.toggle('active');
             burger.classList.toggle('active');
+            body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
         });
 
         // Fermer le menu lorsqu'un lien est cliqué
@@ -14,7 +18,17 @@ document.addEventListener('DOMContentLoaded', () => {
             link.addEventListener('click', () => {
                 navLinks.classList.remove('active');
                 burger.classList.remove('active');
+                body.style.overflow = '';
             });
+        });
+
+        // Fermer le menu si on clique en dehors
+        document.addEventListener('click', (e) => {
+            if (!navLinks.contains(e.target) && !burger.contains(e.target)) {
+                navLinks.classList.remove('active');
+                burger.classList.remove('active');
+                body.style.overflow = '';
+            }
         });
     }
 });
@@ -651,4 +665,59 @@ function showConfirmation() {
 // Générer un numéro de référence aléatoire
 function generateReferenceNumber() {
     return 'RES-' + Math.random().toString(36).substring(2, 8).toUpperCase();
-} 
+}
+
+// Gestion du menu de navigation mobile
+document.addEventListener('DOMContentLoaded', () => {
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    // Fonction pour basculer le menu
+    function toggleMenu() {
+        navToggle.classList.toggle('active');
+        navMenu.classList.toggle('active');
+        document.body.classList.toggle('no-scroll');
+    }
+
+    // Gestionnaire d'événement pour le bouton hamburger
+    if (navToggle) {
+        navToggle.addEventListener('click', toggleMenu);
+    }
+
+    // Fermer le menu quand un lien est cliqué
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (navMenu.classList.contains('active')) {
+                toggleMenu();
+            }
+        });
+    });
+
+    // Gérer la classe active pour les liens de navigation
+    function setActiveLink() {
+        const sections = document.querySelectorAll('section');
+        let currentSection = '';
+
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (window.scrollY >= (sectionTop - sectionHeight / 3)) {
+                currentSection = section.getAttribute('id');
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href').slice(1) === currentSection) {
+                link.classList.add('active');
+            }
+        });
+    }
+
+    // Mettre à jour le lien actif au défilement
+    window.addEventListener('scroll', setActiveLink);
+    
+    // Mettre à jour le lien actif au chargement
+    setActiveLink();
+}); 

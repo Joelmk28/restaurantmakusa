@@ -11,23 +11,33 @@
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">
+    <header class="header">
+        <nav class="nav-container">
+            <div class="nav-logo">
                 <a href="#accueil">
                     <img src="logo.png" alt="Logo Makusa" class="logo-img">
                 </a>
             </div>
-            <div class="nav-links">
-                <a href="#accueil" class="active">Accueil</a>
-                <a href="#menu">Menu</a>
-                <a href="#about">À propos</a>
-                <a href="#contact">Contact</a>
-            </div>
-            <div class="burger">
-                <span></span>
-                <span></span>
-                <span></span>
+            
+            <button class="nav-toggle" aria-label="Menu">
+                <span class="hamburger"></span>
+            </button>
+
+            <div class="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#accueil" class="nav-link active">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#menu" class="nav-link">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">À propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
             </div>
         </nav>
     </header>
@@ -141,7 +151,7 @@
                     <div class="social-links">
                         <h4>Suivez-nous</h4>
                         <a href="https://facebook.com/restaurantmakusa" class="social-link facebook" target="_blank" title="Facebook"><span class="social-icon fb-icon"></span></a>
-                        <a href="https://instagram.com/restaurantmakusa" class="social-link instagram" target="_blank" title="Instagram"><span class="social-icon ig-icon"></span></a>
+                        <a href="https://www.instagram.com/restaurant_makusa/" class="social-link instagram" target="_blank" title="Instagram"><span class="social-icon ig-icon"></span></a>
                         <a href="https://wa.me/243821024983" class="social-link whatsapp" target="_blank" title="WhatsApp"><span class="social-icon wa-icon"></span></a>
                     </div>
                 </div>

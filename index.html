@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Makusa - Cuisine Africaine Authentique</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="nav-logo">
+                <a href="#accueil">
+                    <img src="logo.png" alt="Logo Makusa" class="logo-img">
+                </a>
+            </div>
+            
+            <button class="nav-toggle" aria-label="Menu">
+                <span class="hamburger"></span>
+            </button>
+
+            <div class="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#accueil" class="nav-link active">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#menu" class="nav-link">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">À propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Section Accueil -->
+        <section id="accueil" class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Makusa</h1>
+                    <p class="tagline">Restaurant & Bar - Cuisine Congolaise</p>
+                    <div class="hero-buttons">
+                        <a href="menu.html" class="cta-button">Notre Menu</a>
+                        <button id="reservation-btn" class="cta-button secondary">Réserver</button>
+                    </div>
+                </div>
+                <div class="quick-info">
+                    <p class="address">6, Av Bobila, C/ Ngaliema Ref: Eglise Laborne, en face de Chanimetal Ngaliema</p>
+                    <p class="hours">Ouvert Du lundi au Dim: De 11H à 22H</p>
+                    <p class="phone"><i class="phone-icon-small"></i> <a href="tel:+243821024983">0821024983</a></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Menu -->
+        <section id="menu" class="menu-section">
+            <h2>Notre Menu</h2>
+            <div class="menu-categories">
+                <a href="menu.html#entrées" class="category-link">
+                    <div class="category">
+                        <h3>Entrées</h3>
+                        <div class="menu-items">
+                            <!-- Les plats seront ajoutés ici -->
+                        </div>
+                    </div>
+                </a>
+                <a href="menu.html#plats_principaux" class="category-link">
+                    <div class="category">
+                        <h3>Plats Principaux</h3>
+                        <div class="menu-items">
+                            <!-- Les plats seront ajoutés ici -->
+                        </div>
+                    </div>
+                </a>
+                <a href="menu.html#desserts" class="category-link">
+                    <div class="category">
+                        <h3>Desserts</h3>
+                        <div class="menu-items">
+                            <!-- Les plats seront ajoutés ici -->
+                        </div>
+                    </div>
+                </a>
+                <a href="menu.html#boissons" class="category-link">
+                    <div class="category">
+                        <h3>Boissons</h3>
+                        <div class="menu-items">
+                            <!-- Les boissons seront ajoutées ici -->
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Section À propos -->
+        <section id="about" class="about-section">
+            <h2>À Propos de Makusa</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Notre Histoire</h3>
+                    <p>Fondé en 2020, Makusa est né d'une passion pour la cuisine congolaise authentique. Notre fondateur, originaire de Kinshasa, a voulu créer un espace où les saveurs traditionnelles du Congo seraient mises à l'honneur, tout en y apportant une touche contemporaine.</p>
+                    
+                    <h3>Notre Mission</h3>
+                    <p>Chez Makusa, notre mission est de faire découvrir la richesse de la gastronomie congolaise à travers des plats préparés avec des ingrédients frais et authentiques. Nous nous engageons à offrir une expérience culinaire qui transporte nos clients au cœur de l'Afrique centrale.</p>
+                    
+                    <h3>Notre Cuisine</h3>
+                    <p>Notre chef et son équipe préparent chaque plat avec passion et savoir-faire, en respectant les traditions culinaires congolaises tout en innovant pour satisfaire les palais les plus exigeants. Du célèbre Poulet Moambe aux délicieux Beignets sucrés, chaque bouchée raconte une histoire.</p>
+                </div>
+                <div class="about-image">
+                    <img src="espace.jpg" alt="Espace Restaurant Makusa" class="about-img">
+                    <div class="about-quote">
+                        <blockquote>"La cuisine congolaise est une célébration de saveurs, de couleurs et de traditions."</blockquote>
+                        <cite>— Chef Makusa</cite>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Contact -->
+        <section id="contact" class="contact-section">
+            <h2>Nous Contacter</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Informations</h3>
+                    <div class="info-item">
+                        <i class="info-icon location-icon"></i>
+                        <p><strong>Adresse:</strong> 6, Av Bobila, C/ Ngaliema Ref: Eglise Laborne, en face de Chanimetal Ngaliema</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="info-icon phone-icon"></i>
+                        <p><strong>Téléphone:</strong> <a href="tel:+243821024983">0821024983</a></p>
+                    </div>
+                    <div class="info-item">
+                        <i class="info-icon email-icon"></i>
+                        <p><strong>Email:</strong> <a href="mailto:contact@restaurantmakusa.com">contact@restaurantmakusa.com</a></p>
+                    </div>
+                    <div class="info-item">
+                        <i class="info-icon time-icon"></i>
+                        <p><strong>Horaires:</strong> Lundi - Dimanche: 11h00 - 22h00</p>
+                    </div>
+                    <div class="social-links">
+                        <h4>Suivez-nous</h4>
+                        <a href="https://facebook.com/restaurantmakusa" class="social-link facebook" target="_blank" title="Facebook"><span class="social-icon fb-icon"></span></a>
+                        <a href="https://www.instagram.com/restaurant_makusa/" class="social-link instagram" target="_blank" title="Instagram"><span class="social-icon ig-icon"></span></a>
+                        <a href="https://wa.me/243821024983" class="social-link whatsapp" target="_blank" title="WhatsApp"><span class="social-icon wa-icon"></span></a>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <h3>Envoyez-nous un message</h3>
+                    <form id="contactForm" onsubmit="return sendEmail(event)">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Votre email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Votre téléphone">
+                        </div>
+                        <div class="form-group">
+                            <select id="subject" name="subject">
+                                <option value="" disabled selected>Sujet</option>
+                                <option value="reservation">Réservation</option>
+                                <option value="information">Demande d'informations</option>
+                                <option value="feedback">Commentaires</option>
+                                <option value="other">Autre</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Votre message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15935.347881071424!2d15.2922392!3d-4.4208812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a6a3130b8c30a5f%3A0xbe4f8a89a8d5fdbc!2sNgaliema%2C%20Kinshasa%2C%20Democratic%20Republic%20of%20the%20Congo!5e0!3m2!1sen!2s!4v1634564781285!5m2!1sen!2s" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Restaurant Makusa</h3>
+                <p>© 2024 Tous droits réservés</p>
+            </div>
+            <div class="footer-hours">
+                <h4>Horaires d'ouverture</h4>
+                <p>Lundi - Samedi: 11h30 - 22h30</p>
+                <p>Dimanche: 12h00 - 22h00</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal de réservation -->
+    <div id="reservation-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Réservez une Table</h2>
+            
+            <!-- Étape 1: Informations de réservation -->
+            <div class="reservation-step" id="step-1">
+                <form id="reservationForm">
+                    <div class="form-group">
+                        <input type="text" id="reserve-name" name="name" placeholder="Votre nom" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="reserve-phone" name="phone" placeholder="Votre téléphone" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="reserve-email" name="email" placeholder="Votre email">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group half">
+                            <input type="date" id="reserve-date" name="date" required>
+                        </div>
+                        <div class="form-group half">
+                            <input type="time" id="reserve-time" name="time" min="11:00" max="21:30" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <select id="reserve-guests" name="guests" required>
+                            <option value="" disabled selected>Nombre de personnes</option>
+                            <option value="1">1 personne</option>
+                            <option value="2">2 personnes</option>
+                            <option value="3">3 personnes</option>
+                            <option value="4">4 personnes</option>
+                            <option value="5">5 personnes</option>
+                            <option value="6">6 personnes</option>
+                            <option value="7+">7 personnes ou plus</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="reserve-notes" name="notes" placeholder="Notes spéciales (allergies, occasion spéciale, etc.)"></textarea>
+                    </div>
+                    <div class="reservation-notice">
+                        <p><strong>Note:</strong> Pour confirmer votre réservation, une garantie de 50$ est requise. Ce montant sera déduit de votre addition.</p>
+                    </div>
+                    <button type="button" class="submit-button" onclick="goToPayment()">Continuer vers le paiement</button>
+                </form>
+            </div>
+            
+            <!-- Étape 2: Paiement par Mobile Money -->
+            <div class="reservation-step" id="step-2" style="display: none;">
+                <h3>Paiement de garantie</h3>
+                <div class="payment-amount">
+                    <p>Montant: <strong>50$</strong></p>
+                </div>
+                <div class="payment-options">
+                    <h4>Choisissez votre méthode de paiement</h4>
+                    <div class="payment-methods">
+                        <div class="payment-method">
+                            <input type="radio" id="mpesa" name="payment-method" value="mpesa" checked>
+                            <label for="mpesa">
+                                <img src="mpesa.png" alt="M-Pesa" class="payment-logo">
+                                <span>M-Pesa</span>
+                            </label>
+                        </div>
+                        <div class="payment-method">
+                            <input type="radio" id="orange-money" name="payment-method" value="orange-money">
+                            <label for="orange-money">
+                                <img src="orange-money.png" alt="Orange Money" class="payment-logo">
+                                <span>Orange Money</span>
+                            </label>
+                        </div>
+                        <div class="payment-method">
+                            <input type="radio" id="airtel-money" name="payment-method" value="airtel-money">
+                            <label for="airtel-money">
+                                <img src="airtel-money.png" alt="Airtel Money" class="payment-logo">
+                                <span>Airtel Money</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="payment-details">
+                        <div class="form-group">
+                            <input type="tel" id="payment-phone" placeholder="Numéro de téléphone pour le paiement" required>
+                        </div>
+                    </div>
+                    <div class="payment-instructions">
+                        <p>Après avoir cliqué sur "Effectuer le paiement", vous recevrez un message sur votre téléphone pour confirmer la transaction.</p>
+                    </div>
+                    <div class="button-group">
+                        <button type="button" class="back-button" onclick="backToDetails()">Retour</button>
+                        <button type="button" class="submit-button" onclick="processPayment()">Effectuer le paiement</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Étape 3: Confirmation -->
+            <div class="reservation-step" id="step-3" style="display: none;">
+                <div class="confirmation-message">
+                    <div class="success-icon"></div>
+                    <h3>Réservation confirmée!</h3>
+                    <p>Votre paiement de garantie a été reçu et votre réservation est maintenant confirmée.</p>
+                    <div class="reservation-details" id="confirmation-details">
+                        <!-- Les détails de réservation seront insérés ici -->
+                    </div>
+                    <p>Un SMS de confirmation a été envoyé à votre numéro de téléphone.</p>
+                    <button type="button" class="submit-button" onclick="closeModal()">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html> 

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Restaurant Makusa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="logo.png" alt="Logo Makusa" class="logo-img">
+                </a>
+            </div>
+            
+            <button class="nav-toggle" aria-label="Menu">
+                <span class="hamburger"></span>
+            </button>
+
+            <div class="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#menu" class="nav-link active">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#about" class="nav-link">À propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="menu" class="menu-section">
+            <h2>Notre Menu</h2>
+            <div class="search-container">
+                <input type="text" placeholder="Rechercher dans le menu..." class="menu-search">
+                <div class="price-filter">
+                    <span>Prix:</span>
+                    <input type="number" id="min-price" placeholder="Min $" min="0" class="price-input">
+                    <span>-</span>
+                    <input type="number" id="max-price" placeholder="Max $" min="0" class="price-input">
+                    <button id="apply-filter" class="filter-button">Filtrer</button>
+                    <button id="reset-filter" class="filter-button">Réinitialiser</button>
+                </div>
+            </div>
+            <div class="menu-categories">
+                <div id="entrées" class="category" data-category="entrées">
+                    <h3>Entrées</h3>
+                    <div class="menu-items">
+                        <!-- Les plats seront ajoutés ici -->
+                    </div>
+                </div>
+                <div id="plats_principaux" class="category" data-category="plats_principaux">
+                    <h3>Plats Principaux</h3>
+                    <div class="menu-items">
+                        <!-- Les plats seront ajoutés ici -->
+                    </div>
+                </div>
+                <div id="desserts" class="category" data-category="desserts">
+                    <h3>Desserts</h3>
+                    <div class="menu-items">
+                        <!-- Les plats seront ajoutés ici -->
+                    </div>
+                </div>
+                <div id="boissons" class="category" data-category="boissons">
+                    <h3>Boissons</h3>
+                   
+                    <div class="menu-items accordion-content">
+                        <!-- Les boissons seront ajoutées ici -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Restaurant Makusa</h3>
+                <p>© 2024 Tous droits réservés</p>
+            </div>
+            <div class="footer-hours">
+                <h4>Horaires d'ouverture</h4>
+                <p>Lundi - Dimanche: 11h00 - 22h00</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html> 

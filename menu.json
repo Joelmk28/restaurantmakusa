@@ -1,0 +1,57 @@
+{
+  "menu": {
+    "entrées": [
+      {
+        "name": "Salade Congolaise",
+        "description": "Une salade fraîche avec des légumes locaux et une vinaigrette spéciale.",
+        "price": 8.00
+      },
+      {
+        "name": "Sambusa",
+        "description": "Pâtisseries frites farcies de viande épicée.",
+        "price": 5.00
+      },
+      {
+        "name": "Boulettes de Poulet",
+        "description": "Boulettes de poulet frites avec une sauce spéciale.",
+        "price": 10.00
+      }
+    ],
+    "plats_principaux": [
+      {
+        "name": "Poulet Moambe",
+        "description": "Poulet mijoté dans une sauce à base de noix de palme.",
+        "price": 15.00
+      },
+      {
+        "name": "Poisson Grillé",
+        "description": "Poisson frais grillé avec des épices africaines.",
+        "price": 18.00
+      }
+    ],
+    "desserts": [
+      {
+        "name": "Beignets",
+        "description": "Beignets sucrés servis avec du miel.",
+        "price": 6.00
+      },
+      {
+        "name": "Tarte à la Mangue",
+        "description": "Tarte faite maison avec des mangues fraîches.",
+        "price": 7.00
+      }
+    ],
+    "boissons": [
+      {
+        "name": "Jus de Bissap",
+        "description": "Boisson rafraîchissante à base de fleurs d'hibiscus.",
+        "price": 4.00
+      },
+      {
+        "name": "Thé Gingembre",
+        "description": "Thé épicé au gingembre et citron.",
+        "price": 3.00
+      }
+    ]
+  }
+} 

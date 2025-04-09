@@ -1,2 +1,2 @@
 # restaurantmakusa
-site pour un restaurant bar makusa
+site pour le restaurant & bar makusa
